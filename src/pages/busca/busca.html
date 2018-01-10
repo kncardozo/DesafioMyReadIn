@@ -8,13 +8,13 @@
     <ion-searchbar autocomplete="on" animated="true" (ionInput)="getInput($event)"></ion-searchbar>
 
     <ion-list class="lista">
-        <ion-item>
+        <ion-item *ngFor="let book of books">
             <ion-thumbnail item-start>
-                <img src="https://images.gr-assets.com/books/1486999686l/26082351.jpg">
+                <img src="{{book.imagem}}">
             </ion-thumbnail>
             <ion-label>
-                <h2>Título</h2>
-                <p>Autores</p>
+                <h2>{{book.titulo}}</h2>
+                <p>{{book.autor}}</p>
             </ion-label>
             <ion-checkbox color="secondary" round item-end></ion-checkbox>
         </ion-item>

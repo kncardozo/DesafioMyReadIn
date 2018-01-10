@@ -7,10 +7,15 @@ import { BookService } from '../../services/rest/book-service';
   templateUrl: 'busca.html'
 })
 export class BuscaPage { 
-  books: Array<any>;
+  books: any;
 
   constructor(public navCtrl: NavController,  private bookService: BookService) {
-
+    this.books = [
+      {titulo:'Dear John', autor:'Nicholas Sparks', imagem:'https://images.gr-assets.com/books/1397749854m/5526.jpg'}, 
+      {titulo:'Dear Daughter', autor:'Elizabeth Little', imagem:'https://images.gr-assets.com/books/1395618683m/18693753.jpg'}, 
+      {titulo:'Dear Martin', autor:'Nic Stone', imagem:'https://images.gr-assets.com/books/1495747080m/24974996.jpg'}, 
+      {titulo:'Dear Aaron', autor:'Mariana Zapata', imagem:'https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png'}, 
+    ];
   }
   getInput(event){
     if(event.target.value.length > 2) {
