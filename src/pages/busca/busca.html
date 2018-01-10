@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar color="secondary">
+        <ion-title>Buscar Livros</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar autocomplete="on" animated="true" (ionInput)="getInput($event)"></ion-searchbar>
+
+    <ion-list class="lista">
+        <ion-item>
+            <ion-thumbnail item-start>
+                <img src="https://images.gr-assets.com/books/1486999686l/26082351.jpg">
+            </ion-thumbnail>
+            <ion-label>
+                <h2>Título</h2>
+                <p>Autores</p>
+            </ion-label>
+            <ion-checkbox color="secondary" round item-end></ion-checkbox>
+        </ion-item>
+    </ion-list>
+    <span class="btn-add"><button ion-button item-rigth color="dark" outline>Add</button></span>
+</ion-content>

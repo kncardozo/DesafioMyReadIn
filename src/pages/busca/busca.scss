@@ -1,0 +1,21 @@
+page-busca {
+    .lista {
+        padding-right: 8px;
+    }
+    .btn-add {
+        position: absolute;
+        width: 100%;
+        text-align: right;
+        padding: 8px;
+    }
+}
+
+ion-header {
+    text-align: center;
+}
+
+.tabs-md-secondary .tab-button,
+.tabs-md-secondary .tab-button-icon {
+    color: rgb(32, 58, 57);
+    font-size: 3rem;
+}
